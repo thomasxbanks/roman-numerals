@@ -45,6 +45,7 @@ form input {
   width: 100%;
 }
 form input[type="number"] {
+  margin-top: 1rem;
 }
 form input[type="submit"] {
   border-radius: 0.125rem;
@@ -61,12 +62,15 @@ form input[type="submit"]:hover {
 #roman-numeral {
   display: block;
   margin: 5vh 0;
-  font-family: "Times New Roman", Times, Georgia, serif;
-  font-size: 2rem;
   color: black;
   font-weight: bold;
 }
-
+#roman-numeral span {
+  display: block;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
 #masthead {
   background: dodgerblue;
 }
