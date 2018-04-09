@@ -28,4 +28,5 @@ romanNumeralConvertionFormEl.addEventListener('submit', function (e) {
   e.preventDefault();
   var value = romanNumeralConvertionFormEl.querySelector('input').value;
   romanNumeralEl.innerHTML = "In Roman Numerals, " + value + ' is <strong aria-label="' + generateRomanNumerals(value).split('').join('-') + '">' + generateRomanNumerals(value) + "</strong>";
+  romanNumeralEl.classList.remove('is-empty');
 });

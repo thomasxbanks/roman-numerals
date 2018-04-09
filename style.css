@@ -76,7 +76,7 @@ form input[type="submit"] {
   border: 0;
   margin: 1rem 0;
   max-width: 10rem;
-  transition: background ease-in 300ms;
+  transition: background ease-in 150ms;
 }
 
 form input[type="submit"]:hover {
@@ -124,7 +124,7 @@ form input[type="submit"]:hover {
   color: white;
   text-decoration: none;
   padding: 1rem;
-  transition: background ease-in 300ms;
+  transition: background ease-in 150ms;
 }
 
 .primary-nav ul li a:hover {
@@ -133,4 +133,12 @@ form input[type="submit"]:hover {
 
 .jasmine_html-reporter {
   margin: 0 !important; /* @TODO: Sorry about this but it's development-specific external css */
+}
+
+#roman-numeral {
+  transition: transform ease-in 150ms;
+  transform: scale(1);
+}
+#roman-numeral.is-empty {
+  transform: scale(0);
 }
