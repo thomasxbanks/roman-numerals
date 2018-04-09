@@ -23,5 +23,5 @@ var romanNumeralConvertionFormEl = document.getElementsByTagName('form')[0];
 romanNumeralConvertionFormEl.addEventListener('submit', function (e) {
   e.preventDefault();
   var value = romanNumeralConvertionFormEl.querySelector('input').value;
-  romanNumeralEl.innerHTML = `In Roman Numerals, ${value} is <span>${generateRomanNumerals(value)}</span>`;
+  romanNumeralEl.innerText = `In Roman Numerals, ${value} is ${generateRomanNumerals(value)}`;
 });
