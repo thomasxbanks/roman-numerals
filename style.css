@@ -12,17 +12,17 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
+  line-height: 1.618em;
 }
 
 main {
   display: block;
-  line-height: 1.618em;
 }
 
 .central-column {
   max-width: 960px;
   margin: 0 auto;
-  padding: 5vw 5vh;
+  padding: 3rem;
 }
 
 main p {
@@ -31,11 +31,15 @@ main p {
   margin: 0;
 }
 
-form {
+.card {
+  display: block;
+  width: 100%;
+  background: white;
+  padding: 2rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
 }
-form label {
-  color: black;
-}
+
 form input {
   -webkit-appearance: none;
   display: block;
@@ -43,10 +47,14 @@ form input {
   font-size: 1.5rem;
   line-height: 1.618em;
   width: 100%;
+  border: 0.0625rem solid dimgray;
+  border-radius: 0.25rem;
 }
+
 form input[type="number"] {
   margin-top: 1rem;
 }
+
 form input[type="submit"] {
   border-radius: 0.125rem;
   background: tomato;
@@ -56,13 +64,13 @@ form input[type="submit"] {
   max-width: 10rem;
   transition: background ease-in 300ms;
 }
+
 form input[type="submit"]:hover {
   background: orangered;
 }
+
 #roman-numeral {
-  display: block;
-  margin: 5vh 0;
-  font-weight: bold;
+  margin: 2rem 0;
 }
 
 #masthead {
@@ -70,7 +78,17 @@ form input[type="submit"]:hover {
 }
 
 #masthead .title {
+  font-size: 2rem;
   color: white;
   line-height: 1.618em;
   text-shadow: 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.15);
+}
+
+#colophon {
+  background: black;
+  color: white;
+}
+
+#colophon a {
+  color: dodgerblue;
 }
