@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Roman Numerals | Tests</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.1/jasmine.min.css">
+</head>
+
+<body>
+  <header id="masthead">
+    <div class="central-column">
+      <h1 class="title">
+        Convert Arabic numbers to Roman&nbsp;Numerals
+      </h1>
+    </div>
+  </header>
+  <nav class="primary-nav">
+    <ul class="central-column">
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/test.html">Tests</a>
+      </li>
+    </ul>
+  </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.1/jasmine.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.1/jasmine-html.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.1/boot.min.js"></script>
+  <script>
+    describe("generateRomanNumeral", () => {
+      it("returns I if the given value is 1", () => {
+        expect(generateRomanNumerals('1')).toEqual('I');
+      });
+      it("returns V if the given value is 5", () => {
+        expect(generateRomanNumerals('5')).toEqual('V');
+      });
+      it("returns X if the given value is 10", () => {
+        expect(generateRomanNumerals('10')).toEqual('X');
+      });
+      it("returns XX if the given value is 20", () => {
+        expect(generateRomanNumerals('20')).toEqual('XX');
+      });
+      it("returns MMMCMXCIX if the given value is 3999", () => {
+        expect(generateRomanNumerals('3999')).toEqual('MMMCMXCIX');
+      });
+    });
+  </script>
+  <script src="app.js"></script>
+</body>
+
+</html>

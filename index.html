@@ -17,22 +17,33 @@
       </h1>
     </div>
   </header>
+  <nav aria-label="Primary navigation" class="primary-nav" tabindex="3">
+    <ul class="central-column">
+      <li>
+        <a tabindex="3" href="/">Home</a>
+      </li>
+      <li>
+        <a tabindex="3" href="/test.html">Tests</a>
+      </li>
+    </ul>
+  </nav>
   <main>
     <div class="central-column">
-      <form class="card" action="">
+      <article tabindex="2" class="card" id="roman-numeral" role="alert" aria-live="assertive">In Roman Numerals&hellip;</article>
+      <form class="card" action="" tabindex="1">
         <label>
           <p>Enter a number between 1 and 3999</p>
-          <input type="number" min="1" max="3999">
+          <input tabindex="1" type="number" min="1" max="3999">
         </label>
-        <input type="submit" value="Convert">
+        <input tabindex="1" aria-label="Convert this number to Roman Numerals" type="submit" value="Convert">
       </form>
-      <article class="card" id="roman-numeral">In Roman Numerals&hellip;</article>
     </div>
   </main>
   <footer id="colophon">
     <div class="central-column">
-      You can read more on the
-      <a href="https://en.wikipedia.org/wiki/Roman_numerals" target="_blank" rel="nofollow noopener">Roman Numerals Wikipedia page</a>
+      <small>You can read more on the
+        <a href="https://en.wikipedia.org/wiki/Roman_numerals" target="_blank" rel="nofollow noopener">Roman Numerals Wikipedia page</a>
+      </small>
     </div>
   </footer>
   <script src="app.js"></script>
