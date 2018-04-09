@@ -10,11 +10,12 @@ function generateRomanNumerals(value) {
   var newValueArray = [];
   var valueArrayLength = valueArray.length; // Cache this value so it isn't calculated on every pass
 
+  // Populate the newValueArray with the Roman Numeral equivalents for each number
   for (var i = 0; i < valueArrayLength; i++) {
     newValueArray.push(romanNumeralComponents[i][valueArray[i]]);
   }
 
-  // Like Blazin' Squad, we flip reverse it to put the
+  // Then, like Blazin' Squad, we flip reverse it to put the
   // numerals back in the right order
   var newValue    = newValueArray.reverse().join('');
   return newValue;
@@ -28,5 +29,5 @@ romanNumeralConvertionFormEl.addEventListener('submit', function (e) {
   e.preventDefault();
   var value = romanNumeralConvertionFormEl.querySelector('input').value;
   romanNumeralEl.innerHTML = "In Roman Numerals, " + value + ' is <strong aria-label="' + generateRomanNumerals(value).split('').join('-') + '">' + generateRomanNumerals(value) + "</strong>";
-  romanNumeralEl.classList.remove('is-empty');
+  romanNumeralEl.setAttribute('data-state', '');
 });
