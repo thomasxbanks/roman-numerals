@@ -3,7 +3,7 @@ function generateRomanNumerals(value) {
     ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"], // Ones
     ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"], // Tens
     ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"], // Hundreds
-    ["", "M", "MM", "MMM"] // Thousands. Capped at 3, as per brief
+    ["", "M", "MM", "MMM"] // Thousands. Capped at 3000, as per brief
   ];
   // Reversing the array because there will always be a 1 but not always a thousand
   var valueArray    = value.split('').reverse();
