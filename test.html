@@ -23,6 +23,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.6.1/boot.min.js"></script>
   <script>
     describe("generateRomanNumeral", () => {
+      // Happy paths
       it("returns I if the given value is 1", () => {
         expect(generateRomanNumerals('1')).toEqual('I');
       });
@@ -37,6 +38,29 @@
       });
       it("returns MMMCMXCIX if the given value is 3999", () => {
         expect(generateRomanNumerals('3999')).toEqual('MMMCMXCIX');
+      });
+      // Sad paths
+      it("returns false if the given value is 4000", () => {
+        expect(generateRomanNumerals('4000')).toEqual(false);
+      });
+      it("returns false if the given value is 0", () => {
+        expect(generateRomanNumerals('0')).toEqual(false);
+      });
+      it("returns false if the given value is 45.3", () => {
+        expect(generateRomanNumerals('45.3')).toEqual(false);
+      });
+      it("returns false if the given value is 1234567890", () => {
+        expect(generateRomanNumerals('1234567890')).toEqual(false);
+      });
+      it("returns false if the given value is 'not a number'", () => {
+        expect(generateRomanNumerals('not a number')).toEqual(false);
+      });
+      it("returns false if the given value is the 'Crying Face' emoji (😢)", () => {
+        // Crying face emoji
+        expect(generateRomanNumerals('😢')).toEqual(false);
+      });
+      it("returns false if the given value is the Chinese character for 7 (七)", () => {
+        expect(generateRomanNumerals('七')).toEqual(false);
       });
     });
   </script>
