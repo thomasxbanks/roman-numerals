@@ -15,7 +15,7 @@ I have kept everything to a minimum as building a front-end wasn't specifically 
 
 ### Validation
 
-I have assumed that valid input will come only in Arabic numbers, no other character sets have been accounted for.
+I have assumed that valid input will come only from the Western Latin character set, no other character sets have been accounted for.
 
 ### Unit tests
 
@@ -31,10 +31,7 @@ Tested in
 | Windows 10       | Firefox           | 59.0.2 (64-bit) | Pass   |
 | Windows 10       | Edge              | 41.16299.248.0  | Pass   |
 | Windows 10       | Internet Explorer | 11.309.16299.0  | Pass   |
-| OSX High Sierra  | Chrome            |                 |        |
-| OSX High Sierra  | Firefox           |                 |        |
-| OSX High Sierra  | Safari            |                 |        |
-| Android 8.1      | Chrome            |                 |        |
-| Android 8.1      | Firefox           |                 |        |
-| iOS 9.0          | Chrome            |                 |        |
-| iOS 9.0          | Firefox           |                 |        |
+| OSX High Sierra  | Firefox           | 59.0.2          | Pass   |
+| Android 8.1      | Chrome            | 65.0.3325.109   | Pass   |
+| Android 8.1      | Firefox           | 59.0.2          | Pass   |
+| iOS 11.2.6       | Safari            | Latest          | Pass   |
